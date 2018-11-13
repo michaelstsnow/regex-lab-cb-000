@@ -8,7 +8,7 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words_with_uning=text.scan(/\b[u][n][a-z]*[i][n][g]\b/)
-  words_with_uning
+  return words_with_uning
 end
 
 def words_five_letters_long(text)
