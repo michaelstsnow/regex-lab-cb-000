@@ -7,10 +7,10 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-  words_with_un=text.scan(/un/)
+  words_with_un=text.scan(/\w+un/)
   words_witn_un_ing=[]
   words_with_un.each do |word|
-    if word.scan(/ing/)
+    if word.scan(/\w+ing/)
       words_witn_un_ing << word
     else
     end
