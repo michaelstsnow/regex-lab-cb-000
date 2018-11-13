@@ -8,7 +8,11 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   words_with_un=text.scan(/un/)
-  words_witn_un_ing=words_with_un.scan(/ing/)
+  words_witn_un_ing=[]
+  words_with_un.each do |word|
+    words_witn_un_ing=words_with_un.scan(/ing/)
+  end
+
 end
 
 def words_five_letters_long(text)
