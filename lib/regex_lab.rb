@@ -12,7 +12,7 @@ def words_starting_with_un_and_ending_with_ing(text)
 end
 
 def words_five_letters_long(text)
-  five_letters=text(\b[a-zA-Z]{5}\b)
+  five_letters=text(/\b[a-zA-Z]{5}\b/)
   return five_letters
 end
 
