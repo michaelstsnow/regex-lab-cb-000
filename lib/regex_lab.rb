@@ -13,6 +13,7 @@ end
 
 def words_five_letters_long(text)
   five_letters=text(/\b[a-z]{5}\b/)
+  return five_letters
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
