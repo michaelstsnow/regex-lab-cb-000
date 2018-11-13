@@ -8,9 +8,9 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   if text.match(/\w\A[un]/) && text.match(/\w\Z[ing]/)
-    return true
+    return text.match(/\w\A[un]/) && text.match(/\w\Z[ing]/)
   else
-    return false
+    return []
   end
 end
 
